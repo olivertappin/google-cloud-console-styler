@@ -1,11 +1,10 @@
-var color = {
-  primary: '#1a73e8',
-  production: '#eb391a',
-  sandbox: '#fa6900',
-  uat: '#fa6900'
-}
-
 function initApplication() {
+  var color = {
+    primary: '#1a73e8',
+    production: '#eb391a',
+    sandbox: '#fa6900',
+    uat: '#fa6900'
+  };
   var url = window.location.href;
   if (url.includes('prod')) {
     var color = color.production;
