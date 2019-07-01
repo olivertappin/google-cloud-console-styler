@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Google Cloud Console Styler",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://console.cloud.google.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
